@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import { useState } from 'react'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
   const [active, setActive] = useState(false)
@@ -10,28 +10,25 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={`${styles.wrapper} ratio ratio-16x9`}>
         <div className={styles.content}>
-          <div className={`${styles.certificate} ratio ratio-1x1`}>Preview
+          <div className={styles.left}>
+            <div className={`${styles.certificate} ratio ratio-1x1`}>Preview
+            </div>
           </div>
           <div className={styles.main}>
-            <div className={`${styles.logo} ratio ratio-300x172`}>
+            <div className={`${styles.logo}`}>
               <img
                 className='img-fluid'
                 src='/brand-logo.png'
                 alt='logo-image'
               />
             </div>
-            <p className={`${styles.text} text-center`}>textEnter</p>
-            <div className={`${styles.input} ratio ratio-10x1`}>
-              <input
-                autoComplete="off"
-                type="text"
-                placeholder='Eg. Emily Lee'
-                id='input-name'
-              />
-            </div>
-            <div className={active ? `${styles.downloadBtn} ${styles.active}` : `${styles.downloadBtn}`}>
-              <a className={styles.a}>textDownload</a>
-            </div>
+            <div className={styles.padding}></div>
+            <div className={`${styles.text} text-center`}>Enter your name</div>
+            <input
+              autoComplete="off"
+              type="text"
+              id='input-name'
+            />
           </div>
         </div>
       </div >

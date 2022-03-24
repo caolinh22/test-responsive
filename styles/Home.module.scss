@@ -1,0 +1,64 @@
+.container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  max-height: 100vh;
+}
+.wrapper {
+  background: linear-gradient(270deg, rgba(1, 9, 27, 0.5) 0%, rgba(1, 15, 44, 0.5) 48.59%, rgba(0, 6, 19, 0.5) 100%),
+    url("../public/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.certificate {
+  background: url("../public/frameCer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-right: 30px;
+  font-size: 1.5vw;
+  width: 70%;
+  margin: auto;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.main,
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  flex-direction: column;
+}
+.logo {
+  width: 60%;
+  margin: auto;
+}
+.main img {
+  height: auto;
+}
+.main input  {
+  width: 20vw;
+  height: 3vw;
+  margin: auto;
+  border-radius: 10px;
+}
+.text {
+  font-size: 1.5vw;
+}
+.padding {
+  height: 1.5vw;
+}
+
